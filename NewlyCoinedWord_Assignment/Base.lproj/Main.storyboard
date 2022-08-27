@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NewlyCoinedWord_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ap-mi-D5T">
+                                <rect key="frame" x="340" y="64" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="JHT-e0-hDd"/>
+                                    <constraint firstAttribute="width" constant="44" id="jvQ-AS-z2y"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="magnifyingglass" catalog="system"/>
+                                <connections>
+                                    <action selector="newlyCoinedWordSearchButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9hF-Ot-wOq"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ace-1P-n93">
+                                <rect key="frame" x="30" y="64" width="310" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jm7-VX-wyV">
+                                <rect key="frame" x="30" y="118" width="354" height="33"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMJ-w8-FZE">
+                                        <rect key="frame" x="0.0" y="0.0" width="76.5" height="33"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFf-24-oZH">
+                                        <rect key="frame" x="92.5" y="0.0" width="76.5" height="33"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thw-ZD-2qD">
+                                        <rect key="frame" x="185" y="0.0" width="76.5" height="33"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLK-Oj-hDn">
+                                        <rect key="frame" x="277.5" y="0.0" width="76.5" height="33"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="KR1-T4-Zwi"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="kXn-KE-kxj">
+                                <rect key="frame" x="67" y="248" width="280" height="400"/>
+                                <color key="backgroundColor" red="0.93854739529999998" green="1" blue="0.56492369949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="jS6-26-lS1"/>
+                                    <constraint firstAttribute="height" constant="400" id="xNV-mu-QV9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUy-9D-GW5">
+                                <rect key="frame" x="186.5" y="438" width="41.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ace-1P-n93" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="1ys-1M-fJC"/>
+                            <constraint firstItem="kXn-KE-kxj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A6S-Hc-wZq"/>
+                            <constraint firstItem="7ap-mi-D5T" firstAttribute="leading" secondItem="ace-1P-n93" secondAttribute="trailing" id="DbT-Vw-7Ae"/>
+                            <constraint firstItem="kXn-KE-kxj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HXe-E8-dn0"/>
+                            <constraint firstItem="jm7-VX-wyV" firstAttribute="top" secondItem="7ap-mi-D5T" secondAttribute="bottom" constant="10" id="I7J-BS-yZU"/>
+                            <constraint firstItem="jm7-VX-wyV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="KOL-TK-x6I"/>
+                            <constraint firstItem="ace-1P-n93" firstAttribute="centerY" secondItem="7ap-mi-D5T" secondAttribute="centerY" id="Otn-n6-WFM"/>
+                            <constraint firstItem="FUy-9D-GW5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TNk-NO-9UW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jm7-VX-wyV" secondAttribute="trailing" constant="30" id="iLk-Bh-jyT"/>
+                            <constraint firstItem="7ap-mi-D5T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ljV-YA-mTy"/>
+                            <constraint firstItem="FUy-9D-GW5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qqz-5x-zZA"/>
+                            <constraint firstItem="ace-1P-n93" firstAttribute="height" secondItem="7ap-mi-D5T" secondAttribute="height" id="r5g-lg-EaN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7ap-mi-D5T" secondAttribute="trailing" constant="30" id="xeQ-3i-KTL"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Fht-CU-RaQ" appends="YES" id="70l-ye-puC"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="newlyCoinedWordHashTagButton1" destination="yMJ-w8-FZE" id="gDp-PT-JSC"/>
+                        <outlet property="newlyCoinedWordHashTagButton2" destination="dFf-24-oZH" id="rZa-jn-G0L"/>
+                        <outlet property="newlyCoinedWordHashTagButton3" destination="thw-ZD-2qD" id="7Zk-Rf-u88"/>
+                        <outlet property="newlyCoinedWordHashTagButton4" destination="zLK-Oj-hDn" id="mb7-W2-gdx"/>
+                        <outlet property="newlyCoinedWordSearchButton" destination="7ap-mi-D5T" id="V4M-BI-Dgc"/>
+                        <outlet property="newlyCoinedWordTextField" destination="ace-1P-n93" id="yLb-Xx-IuD"/>
+                        <outlet property="resultImageView" destination="kXn-KE-kxj" id="yiP-NZ-jkL"/>
+                        <outlet property="resultLabel" destination="FUy-9D-GW5" id="ubL-4j-ajI"/>
+                        <outletCollection property="newlyCoinedWordHashTagButton" destination="yMJ-w8-FZE" collectionClass="NSMutableArray" id="gWj-Tg-sDF"/>
+                        <outletCollection property="newlyCoinedWordHashTagButton" destination="dFf-24-oZH" collectionClass="NSMutableArray" id="tQL-2P-pMd"/>
+                        <outletCollection property="newlyCoinedWordHashTagButton" destination="thw-ZD-2qD" collectionClass="NSMutableArray" id="YPu-Og-AIl"/>
+                        <outletCollection property="newlyCoinedWordHashTagButton" destination="zLK-Oj-hDn" collectionClass="NSMutableArray" id="jq2-JX-0Jj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Fht-CU-RaQ">
+                    <connections>
+                        <action selector="tapGestureClicked:" destination="BYZ-38-t0r" id="fTG-fx-Pxr"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="300" height="300"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
