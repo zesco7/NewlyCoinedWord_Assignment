@@ -30,35 +30,45 @@ class ViewController: UIViewController {
         
         view.backgroundColor = .white
         
+        textFieldAttribute()
+        searchButtonAttribute()
+        hashTagButtonAttribute()
+        imageViewAttribute()
+        resultLabelAttribute()
+    }
+    
+    func textFieldAttribute() {
         newlyCoinedWordTextField.layer.borderWidth = 3
         newlyCoinedWordTextField.backgroundColor = .clear
         newlyCoinedWordTextField.layer.borderColor = UIColor.black.cgColor
         newlyCoinedWordTextField.textAlignment = .left
         newlyCoinedWordTextField.placeholder = "신조어를 입력해주세요"
         newlyCoinedWordTextField.textColor = .black
-        
+    }
+    func searchButtonAttribute() {
         newlyCoinedWordSearchButton.backgroundColor = .black
         newlyCoinedWordSearchButton.setImage(UIImage(systemName: "magnifyingglass"), for: .normal)
         newlyCoinedWordSearchButton.tintColor = .white
-        
+    }
+    func hashTagButtonAttribute() {
         for item in newlyCoinedWordHashTagButton {
             item.layer.borderWidth = 1
             item.layer.borderColor = UIColor.black.cgColor
             item.layer.cornerRadius = 10
             item.setTitleColor(.black, for: .normal)
             item.setTitle(newlyCoinedWordArray[1], for: .normal)
-
         }
-        
+    }
+    func imageViewAttribute() {
         resultImageView.image = UIImage(named: "background")
         resultImageView.contentMode = .scaleToFill
-        
+    }
+    func resultLabelAttribute() {
         resultLabel.textColor = .black
         resultLabel.textAlignment = .center
         resultLabel.text = "신조어를 검색해보세요!"
-    
     }
-
+    
     @IBAction func tapGestureClicked(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
     }
