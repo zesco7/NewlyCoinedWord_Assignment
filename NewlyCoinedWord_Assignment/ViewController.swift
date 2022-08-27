@@ -41,7 +41,15 @@ class ViewController: UIViewController {
         hashTagButtonAttribute()
         imageViewAttribute()
         resultLabelAttribute()
+        
+        
+        
+        for (key, value) in newlyCoinedWordMeaningArray {
+            print("신조어: \(key)", "뜻: \(value)")
+        }
     }
+    
+
     
     func textFieldAttribute() {
         newlyCoinedWordTextField.layer.borderWidth = 3
@@ -62,9 +70,13 @@ class ViewController: UIViewController {
             item.layer.borderColor = UIColor.black.cgColor
             item.layer.cornerRadius = 10
             item.setTitleColor(.black, for: .normal)
-            item.setTitle(newlyCoinedWordArray[1], for: .normal)
+            item.setTitle(newlyCoinedWordArray[0], for: .normal)
         }
+        
+
     }
+        
+        
     func imageViewAttribute() {
         resultImageView.image = UIImage(named: "background")
         resultImageView.contentMode = .scaleToFill
@@ -73,6 +85,7 @@ class ViewController: UIViewController {
         resultLabel.textColor = .black
         resultLabel.textAlignment = .center
         resultLabel.text = "신조어를 검색해보세요!"
+        resultLabel.numberOfLines = 0
     }
     
     @IBAction func tapGestureClicked(_ sender: UITapGestureRecognizer) {
@@ -80,7 +93,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func newlyCoinedWordSearchButtonClicked(_ sender: UIButton) {
-        resultLabel.text = newlyCoinedWordTextField.text
+        for item in newlyCoinedWordMeaningArray {
+            if item.key == newlyCoinedWordTextField.text! {
+                resultLabel.text = item.value
+                break
+            }
+            else {
+                resultLabel.text = "등록되지 않은 신조어입니다."
+            }
+        }
     }
     
     @IBAction func keyBoardReturnClicked(_ sender: UITextField) {
