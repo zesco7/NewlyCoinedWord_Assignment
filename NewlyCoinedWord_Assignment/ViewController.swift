@@ -7,6 +7,12 @@
 
 import UIKit
 
+/*질문
+ 1. 해시태그버튼 타이틀길이에 따른 동적변경
+ 2. 해시태그버튼에 신조어 넣기
+ 3. 신조어검색하거나 해시태그버튼 누르면 신조어의미 표시하기
+ */
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var newlyCoinedWordTextField: UITextField!
