@@ -77,6 +77,9 @@ class ViewController: UIViewController {
         resultLabel.text = newlyCoinedWordTextField.text
     }
     
+    @IBAction func keyBoardReturnClicked(_ sender: UITextField) {
+        resultLabel.text = newlyCoinedWordTextField.text
+    }
     
     
 
